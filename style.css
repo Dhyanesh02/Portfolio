@@ -506,6 +506,7 @@ img {
 .Technical-bars{
   display: flex;
   justify-content:center ;
+  padding-left: 10px;
 }
 .Technical-bars .bar{
   padding: 0 20px 0 20px;
