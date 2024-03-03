@@ -341,7 +341,7 @@ img {
   border-radius: 50%;
 }
 /* More About me Button */
-.glow-on-hover {
+.read-more {
   top:2rem;
   margin-top: 50px;
   padding: 5px 5px;
@@ -365,8 +365,11 @@ img {
   animation-delay: 2s;
 }
 
-.glow-on-hover{
+.read-more:hover{
+  font-size: 20px;
+  cursor:none;
   color:#000000;
+  transition-duration: 1s;
   background-color: #fff;
   box-shadow: 0 0 5px rgb(138, 248, 248),
   0 0 25px rgb(138, 248, 248), 0 0 50px rgb(138, 248, 248),
@@ -475,6 +478,9 @@ img {
 
 /*----------Skills Section-------------------------------------------------------------------- */
 
+#skills{
+  margin-top: 5%;
+}
 .container1{
   display: flex;
   justify-content: center;
@@ -520,14 +526,46 @@ img {
   margin-bottom: 5px;
 }
 .Technical-bars  .info span{    
+  color: #fff;
   font-weight: 500;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
+}
+.Technical-bars  .info span:hover{
+  color: rgb(138, 248, 248);
+}
+
+.Technical-bars  .info .info-select{
+  font-size: 0.8rem;
+  margin-top: 20px;
+  margin-left: px;
+  display: inline-block;
+  padding: 8px 8px;
+  background: #000000;
+  border-radius: 10px;
+  color:#fff;
+  letter-spacing: 1px;
+  text-decoration:none;
+  font-weight: ;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #fff,
+  0 0 25px;
+}
+.Technical-bars  .info .info-select:hover{
+  cursor:none;
+  color:#000000;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(138, 248, 248),
+  0 0 25px rgb(138, 248, 248), 0 0 50px rgb(138, 248, 248),
+  0 0 100px rgb(138, 248, 248),0 0 200px rgb(138, 248, 248);   
 }
 @keyframes showText {
   100%{
       opacity:1;
   }
+
 }
 
 /*------------Project Section------------------------------------------------*/
